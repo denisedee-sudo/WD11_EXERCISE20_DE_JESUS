@@ -44,4 +44,10 @@ let determineWinner = function(){
         console.log("Error. You wrote: "+ userInput + "Please choose: rock, paper or scissors")
         document.getElementById("uChoice").innerHTML = `Error. You wrote: "${userInput}". Please choose: rock, paper or scissors`;
         }
+        let comImg = document.createElement('img');
+        comImg.src = "Computer/" + computerChoice +".png"
+        document.getElementById('cImage').appendChild(comImg).classList.add("img-fluid");
+        let uImg = document.createElement('img');
+        uImg.src = "User/" + userInput + ".png"
+        document.getElementById('uImage').appendChild(uImg).classList.add("img-fluid");
 }

@@ -11,17 +11,19 @@
     <h1>Janken!</h1>
     <img src="Janken.png" alt="" class="img img-fluid col-3">
     <br><br><br>
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-5" id="uImage">
+        </div>
+        <div class="col-5" id="cImage">
+        </div>
+        <div class="col-1"></div>
+    </div>
     <h2>Please type rock, paper or scissors to play</h2>
     <input class="rounded" id="userPlay" type="text">
     <button class=" btn btn-outline-light" onclick="determineWinner()">
         I'm ready!
     </button>
-    <div class="row">
-        <div class="col-6" id="uImage">
-        </div>
-        <div class="col-6" id="cImage">
-        </div>
-    </div>
     <h2 id="uChoice"></h2>
     <h2>The computer chose:</h2>
     <h2 id="computerPlay"></h2>
